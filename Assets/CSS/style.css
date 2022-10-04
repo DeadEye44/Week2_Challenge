@@ -1,5 +1,57 @@
-.box1.p {
+.header {
+    background-color: transparent !important;
+    list-style-type: none;
+    font-size: 50px;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: inline-flex;
+    font-size: 20px;
+    padding: 20px;
+    ;
+}
+body {
+    background-color: blueviolet;
+}
+
+.box1 {
     background-color: blue;
+    text-align: justify;
+    color: #ffff;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.box2 {
+    text-align: justify;
+    color: #ffff;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgb(20, 148, 45);
+    text-align:justify;
+    color: beige;
+}
+
+.box3 {
+    text-align: justify;
+    color: #ffff;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgb(123, 27, 48);
     text-align: left;
     color: beige;
 }
