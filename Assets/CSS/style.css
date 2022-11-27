@@ -1,57 +1,82 @@
-.header {
-    background-color: transparent !important;
-    list-style-type: none;
-    font-size: 50px;
-    text-align: center; 
+* {
+    box-sizing: border-box;    
     padding: 0;
     margin: 0;
 }
-.nav li {
-    margin: 0;
-    padding: 0;
-    float: right;
-    display: inline-flex;
-    font-size: 20px;
-    padding: 20px;
-    ;
-}
+
 body {
-    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/Assets/Tiger.png);
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav main main'
+    'footer footer footer'
+    ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 1fr 60px;
 }
 
-.box1 {
-    background-color: blue;
-    text-align: justify;
-    color: #ffff;
-    width: 400px;
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 50px;
-    margin: 20px;
+header,
+footer,
+main,
+nav {    
+    color:rgb(255, 255, 255);
+    padding: 20px;
+    border:skyblue 1px solid;
 }
 
-.box2 {
-    text-align: justify;
-    color: #ffff;
-    width: 400px;
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 50px;
-    margin: 20px;
-    background-color: rgb(20, 148, 45);
-    text-align:justify;
-    color: beige;
+header{
+    grid-area: header;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    word-wrap: unset;
 }
 
-.box3 {
-    text-align: justify;
-    color: #ffff;
-    width: 400px;
-    border: 5px solid black;
-    border-radius: 25px;
-    padding: 50px;
-    margin: 20px;
-    background-color: rgb(123, 27, 48);
-    text-align: left;
-    color: beige;
+nav {
+    grid-area: nav;
+    margin: ;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: none;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+footer a:hover {
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bold;
 }
