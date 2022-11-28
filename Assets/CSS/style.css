@@ -16,7 +16,7 @@ body {
     'footer footer footer'
     ;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 100px 1fr 60px;
+    grid-template-rows: 180px 1fr 60px;
 }
 
 header,
@@ -33,6 +33,7 @@ header{
     font-family: 'Pinyon Script', cursive;
     font-size: 30px;
     text-align: center;
+    justify-content: center;
     padding: 20px;
     word-wrap: unset;
 }
@@ -62,21 +63,31 @@ nav a:hover {
 main {
     grid-area: main;
 }
+
 footer {
     grid-area: footer;
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
+    color: rgba(7, 7, 7, 0.671);
+    text-align: center;
+    justify-content:center;
+    align-content: center;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Pinyon Script', cursive;
 }
 
+.Repo {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 300px;
+    justify-content: center;
+}
+
 footer a:hover {
-    color: hotpink;
+    color: rgb(24, 7, 133);
     text-decoration: none;
     font-weight: bold;
 }
